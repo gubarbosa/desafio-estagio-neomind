@@ -33,7 +33,7 @@ def AnguloRelogio():
 # Atribuir uma variável ao valor do ângulo do relógio
 angulo_relogio = AnguloRelogio()
 
-#Comentário teste
+#Comentário teste #Testando commnet
 #Printar no console horário atual e seu respectivo ângulo
 print('O ângulo entre os ponteiros de hora e minuto atual: {} é {}º'.format(datetime.now().strftime('%H:%M'), angulo_relogio))
 

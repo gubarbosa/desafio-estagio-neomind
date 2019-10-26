@@ -35,5 +35,3 @@ angulo_relogio = AnguloRelogio()
 
 #Printar no console horário atual e seu respectivo ângulo
 print('O ângulo entre os ponteiros do horário {}:{} é {}º'.format(hora_atual, minuto_atual, angulo_relogio))
-
-

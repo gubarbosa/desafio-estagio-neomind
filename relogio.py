@@ -8,6 +8,7 @@ if hora_atual > 12:
 else:
     pass
 
+
 def AnguloHora(hora_atual, minuto_atual):
     angulo_por_hora = 30                               #Relação do ângulo com cada hora
     angulo_hora = hora_atual * angulo_por_hora         #Cálculo do ângulo da hora
@@ -30,10 +31,10 @@ def AnguloRelogio():
         angulo_relogio = angulo_do_minuto - angulo_da_hora         #Cálculo do ângulo do relógio com a diferença entre os ângulos de horas e minutos
     return angulo_relogio
 
+
 # Atribuir uma variável ao valor do ângulo do relógio
 angulo_relogio = AnguloRelogio()
 
-#Comentário teste #Testando commnet
 #Printar no console horário atual e seu respectivo ângulo
 print('O ângulo entre os ponteiros de hora e minuto atual: {} é {}º'.format(datetime.now().strftime('%H:%M'), angulo_relogio))
 

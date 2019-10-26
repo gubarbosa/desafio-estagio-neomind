@@ -1,7 +1,5 @@
-from datetime import datetime
-
-hora_atual = int(datetime.now().strftime('%H'))        #Uso da biblioteca para definir horario atual
-minuto_atual = int(datetime.now().strftime('%M'))
+hora_atual = int(input('Digite o valor da hora do relógio:'))                        #Input para valor da hora
+minuto_atual = int(input('Digite o valor dos minutos do relógio:'))                  #Input para valor dos minutos
 
 if hora_atual > 12:
     hora_atual = hora_atual // 2          #Divisão exata para obter os ponteiros entre 0 e 12
@@ -36,6 +34,6 @@ def AnguloRelogio():
 angulo_relogio = AnguloRelogio()
 
 #Printar no console horário atual e seu respectivo ângulo
-print('O ângulo entre os ponteiros de hora e minuto atual: {} é {}º'.format(datetime.now().strftime('%H:%M'), angulo_relogio))
+print('O ângulo entre os ponteiros do horário {}:{} é {}º'.format(hora_atual, minuto_atual, angulo_relogio))
 
 
